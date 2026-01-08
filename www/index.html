@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="manifest" href="manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="アプリ名">
+<link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+  <!-- This file is the template for "www/index.html". Modify it to fit your needs -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; frame-src https://drive.google.com; media-src *;">
-  
-  <link rel="stylesheet" href="components/loader.css" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <style>
-    body { min-height: 100vh; margin: 0; }
-    #app { height: 100%; }
+    body {
+      min-height: 100vh;
+    }
   </style>
   <script type="module" crossorigin src="./assets/index.js"></script>
   <link rel="stylesheet" href="./assets/index.css">
@@ -18,9 +23,10 @@
 </head>
 <body>
   <div id="app"></div>
-
+  
   <script src="components/loader.js"></script>
-  <script src="cordova.js"></script>
+  <link rel="stylesheet" href="components/loader.css" />
+  
   
   <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
   <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy.js"></script>
